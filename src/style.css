@@ -1,0 +1,133 @@
+body {
+  background-color: #233142;
+}
+
+.container {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 150px;
+  color: #162f4e;
+  background-color: white;
+}
+
+.forecast {
+  color: white;
+  width: 12%;
+  position: relative;
+  left: 950px;
+  top: -150px;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.weather {
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.day {
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 30px;
+}
+
+h5 {
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  margin: 0 15px;
+}
+
+h3 {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+}
+
+img {
+  width: 20%;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  margin: 20px;
+}
+
+hr {
+  width: 20%;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+h1,
+h2,
+hr {
+  position: relative;
+  bottom: -10px;
+  color: white;
+}
+
+form {
+  font-family: "Quicksand", sans-serif;
+}
+
+.search {
+  width: 20%;
+  position: relative;
+  bottom: -20px;
+  right: -15px;
+}
+
+.btn-light {
+  position: relative;
+  bottom: 38px;
+  right: -275px;
+}
+
+button {
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+  top: -56px;
+  right: -390px;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  margin: 0 auto;
+  position: relative;
+  top: -70px;
+}
