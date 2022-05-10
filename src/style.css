@@ -131,3 +131,13 @@ button {
   position: relative;
   top: -70px;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: white;
+}
