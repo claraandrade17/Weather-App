@@ -68,7 +68,7 @@ function displayForecast() {
   let forecastElement = document.querySelector("#weekly-temperature");
 
   let forecastHTML = `<div class="row">`;
-  let week = ["Thursday", "Friday", "Saturday", "Sunday", "Monday"];
+  let week = ["Thursday", "Friday", "Saturday", "Sunday", "Monday", "Tuesday"];
   week.forEach(function (day) {
     forecastHTML =
       forecastHTML +
@@ -81,7 +81,6 @@ function displayForecast() {
       />
       <div class="weather">11º</div>
       </div>
-    </div>
   `;
   });
   forecastHTML = forecastHTML + `</div>`;
