@@ -64,6 +64,30 @@ function search(city) {
 let form = document.querySelector("form");
 form.addEventListener("submit", citySearch);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#weekly-temperature");
+
+  let forecastHTML = `<div class="row">`;
+  let week = ["Thursday", "Friday", "Saturday", "Sunday", "Monday"];
+  week.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-2">
+      <div class="day">${day}</div>
+      <img 
+        src="http://openweathermap.org/img/wn/50d@2x.png" 
+        alt =""
+      />
+      <div class="weather">11º</div>
+      </div>
+    </div>
+  `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("h1");
@@ -92,3 +116,5 @@ function getCurrentPosition() {
 
 let currentLocationButton = document.querySelector("#current-location");
 currentLocationButton.addEventListener("click", getCurrentPosition);
+
+displayForecast();
