@@ -12,14 +12,9 @@ body {
   padding: 40px;
   margin: 0 auto;
   position: relative;
-  bottom: 150px;
+  bottom: 170px;
   color: #162f4e;
   background-color: white;
-}
-
-.weather-forecast {
-  text-align: center;
-  display: block;
 }
 
 .forecast {
@@ -27,7 +22,7 @@ body {
   width: 12%;
   position: relative;
   left: 950px;
-  top: -150px;
+  top: -200px;
   font-size: 20px;
   font-family: "Quicksand", sans-serif;
 }
@@ -99,7 +94,7 @@ h1,
 h2,
 hr {
   position: relative;
-  bottom: -10px;
+  bottom: 20px;
   color: white;
 }
 
