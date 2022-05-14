@@ -81,6 +81,7 @@ function formatDay(timestamp) {
 }
 
 function displayForecast(response) {
+  let week = response.data.daily;
   let forecastElement = document.querySelector("#weekly-temperature");
 
   let forecastHTML = `<div class="row">`;
@@ -88,7 +89,7 @@ function displayForecast(response) {
     if (index < 5) {
       forecastHTML =
         forecastHTML +
-        ` <div class="col-2">
+        ` <div class="col">
             <div class="day">${formatDay(forecastDay.dt)}</div>
             <img 
               src="http://openweathermap.org/img/wn/${
@@ -121,6 +122,8 @@ function showTemperature(response) {
     response.data.wind.speed
   );
   document.querySelector("h5").innerHTML = response.data.name;
+
+  getForecast(response.data.coord);
 }
 
 function showPosition(position) {
@@ -140,4 +143,4 @@ function getCurrentPosition() {
 let currentLocationButton = document.querySelector("#current-location");
 currentLocationButton.addEventListener("click", getCurrentPosition);
 
-displayForecast();
+search("Paris");
